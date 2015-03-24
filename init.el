@@ -68,54 +68,6 @@
 ;;; ウィンドウ内に収まらないときだけ括弧内も光らせる。
 (setq show-paren-style 'mixed)
 
-
-;; 空白や長すぎる行を視覚化する。
-(require 'whitespace)
-;; 1行が80桁を超えたら長すぎると判断する。
-(setq whitespace-line-column 80)
-(setq whitespace-style '(face              ; faceを使って視覚化する。
-                         trailing          ; 行末の空白を対象とする。
-                         lines-tail        ; 長すぎる行のうち
-                         spaces
-                         space-mark
-                         newline
-                         newline-mark
-                         empty             ; 先頭/末尾の空行
-                         tab-mark))
-
-
-(setq whitespace-display-mappings
-      '((space-mark ?\u3000 [?\u25a1])
-      ((space-mark   ?\xA0  [?\xA4]  [?_]) ; hard space - currency
-      (space-mark   ?\x8A0 [?\x8A4] [?_]) ; hard space - currency
-      (space-mark   ?\x920 [?\x924] [?_]) ; hard space - currency
-      (space-mark   ?\xE20 [?\xE24] [?_]) ; hard space - currency
-      (space-mark   ?\xF20 [?\xF24] [?_]) ; hard space - currency
-      (space-mark   ?　    [?□]    [?＿]) ; full-width space - square
-      (newline-mark ?\n    [?\u21B5 ?\n] [?$ ?\n])   ; eol - right quote mark
-      ;(newline-mark ?\n [?\u21B5 ?\n])
-        ;; WARNING: the mapping below has a problem.
-        ;; When a TAB occupies exactly one column, it will display the
-        ;; character ?\xBB at that column followed by a TAB which goes to
-        ;; the next TAB column.
-        ;; If this is a problem for you, please, comment the line below.
-        (tab-mark ?\t [?\xBB ?\t] [?\\ ?\t])))
-      ;; whitespace-spaceの定義を全角スペースにしq、色をつけて目立たせる
-
-(setq whitespace-space-regexp "\\(\u3000+\\)")
-(set-face-foreground 'whitespace-space "cyan")
-(set-face-background 'whitespace-space 'nil)
-
-(set-face-background 'whitespace-newline 'nil)
-(set-face-foreground 'whitespace-newline  "DarkGray")
-
-(set-face-underline  'whitespace-trailing 1)
-(set-face-foreground 'whitespace-trailing "cyan")
-(set-face-background 'whitespace-trailing 'nil)
-
-;; デフォルトで視覚化を有効にする。
-(global-whitespace-mode 1)
-
 (require 'php-mode)
 
 ;;; 現在行を目立たせる
@@ -141,14 +93,6 @@
 (setq completion-ignore-case t)
 (setq read-file-name-completion-ignore-case t)
 
-;;; 部分一致の補完機能を使う
-;;; p-bでprint-bufferとか
-;;;(partial-completion-mode t)
-
-;;; 補完可能なものを随時表示
-;;; 少しうるさい
-;(icomplete-mode 1)
-
 ;;; 履歴数を大きくする
 (setq history-length 10000)
 
@@ -167,7 +111,60 @@
 ;;;ruby-modeのマジックコメントを削除
 (require 'ruby-mode)
 ;(defun ruby-mode-set-encoding () nil)
-(setq ruby-insert-encoding-magic-comment nil) 
+(setq ruby-insert-encoding-magic-comment nil)
 
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+;; 空白や長すぎる行を視覚化する。
+(require 'whitespace)
+
+;; デフォルトで視覚化を有効にする。
+(global-whitespace-mode 1)
+
+;; 1行が80桁を超えたら長すぎると判断する。
+(setq whitespace-line-column 80)
+(setq whitespace-style '(face              ; faceを使って視覚化する。
+                         trailing          ; 行末の空白を対象とする。
+                         lines-tail        ; 長すぎる行のうち
+                         spaces
+                         space-mark
+                         newline
+                         newline-mark
+                         empty             ; 先頭/末尾の空行
+                         tab-mark))
+
+(setq whitespace-display-mappings
+      '((space-mark ?\u3000 [?\u25a1])
+      (space-mark   ?\xA0  [?\xA4]  [?_]) ; hard space - currency
+      (space-mark   ?\x8A0 [?\x8A4] [?_]) ; hard space - currency
+      (space-mark   ?\x920 [?\x924] [?_]) ; hard space - currency
+      (space-mark   ?\xE20 [?\xE24] [?_]) ; hard space - currency
+      (space-mark   ?\xF20 [?\xF24] [?_]) ; hard space - currency
+      ;(space-mark   ?　    [?□]    [?＿]) ; full-width space - square
+      (newline-mark ?\n    [?\u21B5 ?\n] [?$ ?\n])   ; eol - right quote mark
+      ))
+      ;(newline-mark ?\n [?\u21B5 ?\n])
+        ;; WARNING: the mapping below has a problem.
+        ;; When a TAB occupies exactly one column, it will display the
+        ;; character ?\xBB at that column followed by a TAB which goes to
+        ;; the next TAB column.
+        ;; If this is a problem for you, please, comment the line below.
+        ;;(tab-mark ?\t [?\xBB ?\t] [?\\ ?\t])))
+      ;; whitespace-spaceの定義を全角スペースにしq、色をつけて目立たせる
+
+
+
+;(setq whitespace-space-regexp "\\(\u3000+\\)")
+(set-face-foreground 'whitespace-space "cyan")
+(set-face-background 'whitespace-space 'nil)
+
+(set-face-background 'whitespace-newline 'nil)
+(set-face-foreground 'whitespace-newline  "DarkGray")
+
+(set-face-underline  'whitespace-trailing 1)
+(set-face-foreground 'whitespace-trailing "cyan")
+(set-face-background 'whitespace-trailing 'nil)
+
+;indentでtabをつかわないようにする
+(setq-default indent-tabs-mode nil)
