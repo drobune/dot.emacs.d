@@ -1,8 +1,10 @@
 ; theme
 (load-theme 'wombat t)
 
+; font
+(set-frame-font "ricty-15")
+
 ; full-screen
-(setq ns-use-native-fullscreen nil)
 (toggle-frame-fullscreen)
 
 ; フレーム透過設定
