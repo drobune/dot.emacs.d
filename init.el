@@ -96,6 +96,8 @@
 (setq completion-ignore-case t)
 (setq read-file-name-completion-ignore-case t)
 
+
+
 ; 履歴数を大きくする
 (setq history-length 10000)
 
@@ -170,3 +172,6 @@
 
 ;indentでtabをつかわないようにする
 (setq-default indent-tabs-mode nil)
+
+; share clipboard
+(setq x-select-enable-clipboard t)
