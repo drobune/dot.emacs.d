@@ -41,7 +41,7 @@
 (require 'json)
 (eval-when-compile (require 'cl))
 
-(defcustom json-reformat:indent-width 4
+(defcustom json-reformat:indent-width 2
   "How much indentation `json-reformat-region' should do at each level."
   :type 'integer
   :group 'json-reformat)

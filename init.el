@@ -2,13 +2,13 @@
 (load-theme 'wombat t)
 
 ; font
-(set-frame-font "ricty-15")
+(set-frame-font "ricty-16.5")
 
 ; full-screen
 (toggle-frame-fullscreen)
 
 ; フレーム透過設定
-(set-frame-parameter (selected-frame) 'alpha '(80 80))
+(set-frame-parameter (selected-frame) 'alpha '(85 90))
 
 ; utf-8
 (set-default-coding-systems 'utf-8)
@@ -175,3 +175,24 @@
 
 ; share clipboard
 (setq x-select-enable-clipboard t)
+(put 'upcase-region 'disabled nil)
+
+
+;;
+;; Auto Complete
+;;
+(require 'auto-complete-config)
+(ac-config-default)
+(add-to-list 'ac-modes 'text-mode)         ;; text-modeでも自動的に有効にする
+(add-to-list 'ac-modes 'fundamental-mode)  ;; fundamental-mode
+(add-to-list 'ac-modes 'org-mode)
+(add-to-list 'ac-modes 'yatex-mode)
+(ac-set-trigger-key "TAB")
+(setq ac-use-menu-map t)       ;; 補完メニュー表示時にC-n/C-pで補完候補選択
+(setq ac-use-fuzzy t)          ;; 曖昧マッチ
+
+;; コントロール用のバッファを同一フレーム内に表示
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
+;; diffのバッファを上下ではなく左右に並べる
+(setq ediff-split-window-function 'split-window-horizontally)
+
