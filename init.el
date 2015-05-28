@@ -149,16 +149,8 @@
       (space-mark   ?\x920 [?\x924] [?_]) ; hard space - currency
       (space-mark   ?\xE20 [?\xE24] [?_]) ; hard space - currency
       (space-mark   ?\xF20 [?\xF24] [?_]) ; hard space - currency
-      (newline-mark ?\n    [?\u21B5 ?\n] [?$ ?\n])   ; eol - right quote mark
+      (newline-mark ?\n    [?\u21B5 ?\n] [?\u240D ?\n])
       ))
-      ;(newline-mark ?\n [?\u21B5 ?\n])
-        ;; WARNING: the mapping below has a problem.
-        ;; When a TAB occupies exactly one column, it will display the
-        ;; character ?\xBB at that column followed by a TAB which goes to
-        ;; the next TAB column.
-        ;; If this is a problem for you, please, comment the line below.
-        ;;(tab-mark ?\t [?\xBB ?\t] [?\\ ?\t])))
-      ;; whitespace-spaceの定義を全角スペースにしq、色をつけて目立たせる
 
 (set-face-foreground 'whitespace-space "cyan")
 (set-face-background 'whitespace-space 'nil)
@@ -175,24 +167,16 @@
 
 ; share clipboard
 (setq x-select-enable-clipboard t)
-(put 'upcase-region 'disabled nil)
-
-
-;;
-;; Auto Complete
-;;
-(require 'auto-complete-config)
-(ac-config-default)
-(add-to-list 'ac-modes 'text-mode)         ;; text-modeでも自動的に有効にする
-(add-to-list 'ac-modes 'fundamental-mode)  ;; fundamental-mode
-(add-to-list 'ac-modes 'org-mode)
-(add-to-list 'ac-modes 'yatex-mode)
-(ac-set-trigger-key "TAB")
-(setq ac-use-menu-map t)       ;; 補完メニュー表示時にC-n/C-pで補完候補選択
-(setq ac-use-fuzzy t)          ;; 曖昧マッチ
 
 ;; コントロール用のバッファを同一フレーム内に表示
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 ;; diffのバッファを上下ではなく左右に並べる
 (setq ediff-split-window-function 'split-window-horizontally)
 
+(require 'auto-complete-config)
+(ac-config-default)
+(setq ac-use-fuzzy t)
+
+
+(setq make-backup-files nil)
+(put 'upcase-region 'disabled nil)
