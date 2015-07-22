@@ -181,3 +181,4 @@
 (setq make-backup-files nil)
 (put 'upcase-region 'disabled nil)
 (setq auto-save-default nil)
+(setq create-lockfiles nil)
