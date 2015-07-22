@@ -2,10 +2,10 @@
 (load-theme 'wombat t)
 
 ; font
-(set-frame-font "ricty-16.5")
+;(set-frame-font "ricty-16.5")
 
 ; full-screen
-(toggle-frame-fullscreen)
+;(toggle-frame-fullscreen)
 
 ; フレーム透過設定
 (set-frame-parameter (selected-frame) 'alpha '(85 90))
@@ -35,7 +35,7 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x f") 'helm-find-files)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-;(global-set-key (kbd "C-c f") 'helm-occuer)
+(global-set-key (kbd "C-c f") 'helm-occuer)
 (helm-mode 1)
 
 ; TABで補完
@@ -158,7 +158,7 @@
 (set-face-background 'whitespace-newline 'nil)
 (set-face-foreground 'whitespace-newline  "DarkGray")
 
-(set-face-underline  'whitespace-trailing 1)
+;(set-face-underline  'whitespace-trailing 1)
 (set-face-foreground 'whitespace-trailing "cyan")
 (set-face-background 'whitespace-trailing 'nil)
 
@@ -180,3 +180,4 @@
 
 (setq make-backup-files nil)
 (put 'upcase-region 'disabled nil)
+(setq auto-save-default nil)
