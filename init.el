@@ -35,7 +35,7 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x f") 'helm-find-files)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-(global-set-key (kbd "C-c f") 'helm-occuer)
+(global-set-key (kbd "C-c f") 'helm-occur)
 (helm-mode 1)
 
 ; TABで補完
@@ -152,15 +152,37 @@
       (newline-mark ?\n    [?\u21B5 ?\n] [?\u240D ?\n])
       ))
 
-(set-face-foreground 'whitespace-space "cyan")
-(set-face-background 'whitespace-space 'nil)
+;(set-face-foreground 'whitespace-space "cyan")
+;(set-face-background 'whitespace-space 'nil)
 
-(set-face-background 'whitespace-newline 'nil)
-(set-face-foreground 'whitespace-newline  "DarkGray")
+;(set-face-background 'whitespace-newline 'nil)
+;(set-face-foreground 'whitespace-newline  "DarkGray")
 
 ;(set-face-underline  'whitespace-trailing 1)
-(set-face-foreground 'whitespace-trailing "cyan")
-(set-face-background 'whitespace-trailing 'nil)
+;(set-face-foreground 'whitespace-trailing "cyan")
+;(set-face-background 'whitespace-trailing 'nil)
+
+;; 保存前に自動でクリーンアップ
+(setq whitespace-action '(auto-cleanup))
+
+(global-whitespace-mode 1)
+
+(defvar my/bg-color "#232323")
+(set-face-attribute 'whitespace-trailing nil
+                    :background my/bg-color
+                    :foreground "DeepPink"
+                    :underline t)
+(set-face-attribute 'whitespace-tab nil
+                    :background my/bg-color
+                    :foreground "LightSkyBlue"
+                    :underline t)
+(set-face-attribute 'whitespace-space nil
+                    :background my/bg-color
+                    :foreground "GreenYellow"
+                    :weight 'bold)
+(set-face-attribute 'whitespace-empty nil
+                    :background my/bg-color)
+
 
 ;indentでtabをつかわないようにする
 (setq-default indent-tabs-mode nil)
