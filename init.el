@@ -208,6 +208,7 @@
 
 (defun jump-to-github ()
   "Go to github code position at most recent commitl;"
+  (interactive)
   (let (full_path)
     (setq
      full_path buffer-file-name
@@ -215,7 +216,7 @@
      cd_dir (shell-command-to-string (concat "cd " dir_name))
      prefix (shell-command-to-string "git rev-parse  --show-prefix | tr -d '\n'")
      current_commit (shell-command-to-string "git show -s --format=%H | tr -d '\n'")
-     current_line (1+ (count-lines 1 (point)))
+     current_line (count-lines 1 (point))
      repo_name (shell-command-to-string "git remote -v | grep origin | head -1 | awk '{sub(\"git@github.com:\",\"\");sub(\".git\",\"\");print $2}' | tr -d '\n'")
      github_url (concat "https://github.com/"
                         repo_name "/blob/" current_commit "/"
