@@ -213,14 +213,19 @@
     (setq
      full_path buffer-file-name
      dir_name (shell-command-to-string (concat "echo " full_path "| xargs dirname"))
+     file_name (shell-command-to-string (concat "echo `basename " full_path "` | tr -d '\n'"))
      cd_dir (shell-command-to-string (concat "cd " dir_name))
      prefix (shell-command-to-string "git rev-parse  --show-prefix | tr -d '\n'")
      current_commit (shell-command-to-string "git show -s --format=%H | tr -d '\n'")
      current_line (count-lines 1 (point))
      repo_name (shell-command-to-string "git remote -v | grep origin | head -1 | awk '{sub(\"git@github.com:\",\"\");sub(\".git\",\"\");print $2}' | tr -d '\n'")
      github_url (concat "https://github.com/"
-                        repo_name "/blob/" current_commit "/"
-                        prefix (buffer-name) "#L" (number-to-string current_line)))
+                 repo_name "/blob/" current_commit "/" prefix
+                 file_name "#L" (number-to-string current_line)))
     (shell-command (concat "xdg-open " github_url))))
 
 (global-set-key (kbd "M-b") 'jump-to-github)
+
+(require 'mozc)
+(setq default-input-method "japanese-mozc")
+(setq mozc-candidate-style 'overlay)
