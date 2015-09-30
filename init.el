@@ -229,3 +229,9 @@
 (require 'mozc)
 (setq default-input-method "japanese-mozc")
 (setq mozc-candidate-style 'overlay)
+
+(add-to-list 'load-path "~/.emacs.d/user/")
+
+(defconst *dmacro-key* "\C-t")
+(global-set-key *dmacro-key* 'dmacro-exec)
+(autoload 'dmacro-exec "dmacro" nil t)
