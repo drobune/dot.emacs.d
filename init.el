@@ -183,28 +183,26 @@
 (set-face-attribute 'whitespace-empty nil
                     :background my/bg-color)
 
-
                                         ;indentでtabをつかわないようにする
 (setq-default indent-tabs-mode nil)
 
                                         ; share clipboard
 (setq x-select-enable-clipboard t)
 
-;; コントロール用のバッファを同一フレーム内に表示
+                                        ; コントロール用のバッファを同一フレーム内に表示
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
-;; diffのバッファを上下ではなく左右に並べる
+                                        ; diffのバッファを上下ではなく左右に並べる
 (setq ediff-split-window-function 'split-window-horizontally)
 
 (require 'auto-complete-config)
 (ac-config-default)
 (setq ac-use-fuzzy t)
 
-
 (setq make-backup-files nil)
 (put 'upcase-region 'disabled nil)
 (setq auto-save-default nil)
 (setq create-lockfiles nil)
-
+(setq require-final-newline t)
 
 (defun jump-to-github ()
   "Go to github code position at most recent commitl;"
@@ -220,8 +218,8 @@
      current_line (count-lines 1 (point))
      repo_name (shell-command-to-string "git remote -v | grep origin | head -1 | awk '{sub(\"git@github.com:\",\"\");sub(\".git\",\"\");print $2}' | tr -d '\n'")
      github_url (concat "https://github.com/"
-                 repo_name "/blob/" current_commit "/" prefix
-                 file_name "#L" (number-to-string current_line)))
+                        repo_name "/blob/" current_commit "/" prefix
+                        file_name "#L" (number-to-string current_line)))
     (shell-command (concat "xdg-open " github_url))))
 
 (global-set-key (kbd "M-b") 'jump-to-github)
