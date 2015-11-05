@@ -233,3 +233,5 @@
 (defconst *dmacro-key* "\C-t")
 (global-set-key *dmacro-key* 'dmacro-exec)
 (autoload 'dmacro-exec "dmacro" nil t)
+
+(setq ruby-deep-indent-paren-style nil)
