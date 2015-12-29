@@ -1,0 +1,517 @@
+;;; -*- coding: utf-8 -*-
+(("/home/drobune/gyazo/zoi/"
+  (dired-filename . "/home/drobune/gyazo/zoi/main.go"))
+ ("/home/drobune/gyazo/zoi/main.go" . 1267)
+ ("/home/drobune/gyazo/zoi/gs_client.go" . 1951)
+ ("/home/drobune/gyazo/zoi/imageFile.go" . 5438)
+ ("/home/drobune/gyazo/zoi/readme.md" . 92)
+ ("/home/drobune/gyazo/zoi/util_test.go" . 1294)
+ ("/home/drobune/gyazo/GyazoRails/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/Procfile"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/images/show.html.erb" . 344)
+ ("/home/drobune/gyazo/zoi/util.go" . 854)
+ ("/home/drobune/gyazo/zoi/main_test.go" . 1396)
+ ("/home/drobune/gyazo/GyazoChef/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/lisalashes_live.m4a"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/recipes/crontabs.rb" . 268)
+ ("/home/drobune/gyazo/zoi/start.sh" . 530)
+ ("/home/drobune/.emacs.d/"
+  (dired-filename . "/home/drobune/.emacs.d/init.el"))
+ ("/home/drobune/.emacs.d/init.el" . 8535)
+ ("/home/drobune/.emacs.d/user/drill-instructor.el" . 5151)
+ ("/home/drobune/gyazo/GyazoRails/README.md" . 1162)
+ ("/home/drobune/.emacs.d/elpa/drill-instructor-AZIK-force-20151122.2114/"
+  (dired-filename . "/home/drobune/.emacs.d/elpa/drill-instructor-AZIK-force-20151122.2114/drill-instructor-AZIK-force.el"))
+ ("/home/drobune/"
+  (dired-filename . "/home/drobune/.emacs.d"))
+ ("/home/drobune/.emacs.d/elpa/"
+  (dired-filename . "/home/drobune/.emacs.d/elpa/mozc-20150815.303"))
+ ("/home/drobune/.emacs.d/elpa/drill-instructor-AZIK-force-20151122.2114/drill-instructor-AZIK-force.el" . 401)
+ ("/home/drobune/.emacs.d/user/"
+  (dired-filename . "/home/drobune/.emacs.d/user/drill-instructor.el"))
+ ("/home/drobune/.emacs.d/elpa/drill-instructor-AZIK-force-20151122.2114/drill-instructor-AZIK-force-autoloads.el" . 312)
+ ("/home/drobune/gyazo/GyazoRails/config/application.rb" . 1596)
+ ("/home/drobune/gyazo/GyazoChef/roles/gyazo_upload.json" . 477)
+ ("/home/drobune/gyazo/GyazoFileSearcher/config/deploy.rb" . 1287)
+ ("/home/drobune/gyazo/GyazoChef/roles/gyazo_app.json" . 493)
+ ("/home/drobune/gyazo/GyazoRails/.rubocop_todo.yml" . 1053)
+ ("/home/drobune/gyazo/GyazoFileSearcher/lib/capistrano/tasks/"
+  (dired-filename . "/home/drobune/gyazo/GyazoFileSearcher/lib/capistrano/tasks/.."))
+ ("/home/drobune/gyazo/GyazoFileSearcher/lib/capistrano/"
+  (dired-filename . "/home/drobune/gyazo/GyazoFileSearcher/lib/capistrano/.."))
+ ("/home/drobune/gyazo/GyazoFileSearcher/lib/"
+  (dired-filename . "/home/drobune/gyazo/GyazoFileSearcher/lib/.."))
+ ("/home/drobune/gyazo/GyazoFileSearcher/"
+  (dired-filename . "/home/drobune/gyazo/GyazoFileSearcher/Capfile"))
+ ("/home/drobune/gyazo/GyazoRails/lib/capistrano/tasks/assets.cap" . 397)
+ ("/home/drobune/gyazo/GyazoFileSearcher/Capfile" . 736)
+ ("/home/drobune/gyazo/GyazoFileSearcher/Gemfile" . 96)
+ ("/home/drobune/gyazo/GyazoRails/Capfile" . 569)
+ ("/home/drobune/gyazo/GyazoRails/lib/capistrano/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/lib/capistrano/tasks"))
+ ("/home/drobune/gyazo/GyazoRails/lib/capistrano/tasks/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/lib/capistrano/tasks/god.cap"))
+ ("/home/drobune/gyazo/GyazoFileSearcher/lib/capistrano/tasks/node.rake" . 705)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/image/ImageBox.js" . 682)
+ ("/home/drobune/gyazo/GyazoRails/lib/capistrano/tasks/god.cap" . 318)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/iptables/templates/default/firewall.sh.erb" . 4613)
+ ("/home/drobune/gyazo/GyazoChef/spec/thumb/iptables_spec.rb" . 1783)
+ ("/home/drobune/gyazo/GyazoChef/spec/upload/iptables_spec.rb" . 1422)
+ ("/home/drobune/fuyou" . 16)
+ ("/home/drobune/gyazo/gyo/"
+  (dired-filename . "/home/drobune/gyazo/gyo/config"))
+ ("/home/drobune/gyazo/gyo/config/"
+  (dired-filename . "/home/drobune/gyazo/gyo/config/deploy.rb"))
+ ("/home/drobune/gyazo/gyo/config/deploy.rb" . 572)
+ ("/home/drobune/gyazo/gyo/config/deploy/"
+  (dired-filename . "/home/drobune/gyazo/gyo/config/deploy/production.rb"))
+ ("/home/drobune/gyazo/gyo/config/deploy/production.rb" . 62)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/common-packages/recipes/default.rb" . 672)
+ ("/home/drobune/gyazo/GyazoChef/roles/gyazo_zoi.json" . 444)
+ ("/home/drobune/gyazo/GyazoChef/roles/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/roles/gyazo_gif.json"))
+ ("/home/drobune/gyazo/GyazoChef/nodes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/nodes/imfix.json"))
+ ("/home/drobune/gyazo/GyazoChef/roles/gyazo_gif.json" . 694)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/common-packages"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/common-packages/templates/default/redis.conf.erb" . 9005)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/common-packages/" . 567)
+ ("/home/drobune/gyazo/GyazoChef/roles/base.json" . 66)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/lib/setupMixpanel.js" . 238)
+ ("/home/drobune/gyazo/GyazoRails/config/deploy/production.rb" . 1820)
+ ("/home/drobune/gyazo/GyazoRails/config/deploy/staging.rb" . 1512)
+ ("/home/drobune/gyazo/GyazoRails/config/deploy.rb" . 1325)
+ ("/home/drobune/gyazo/GyazoUpload/"
+  (dired-filename . "/home/drobune/gyazo/GyazoUpload/composer.lock"))
+ ("/home/drobune/gyazo/GyazoUpload/composer.lock" . 325)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app.js" . 244)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/boards_controller.rb" . 784)
+ ("/home/drobune/gyazo/e.json" . 52384)
+ ("/home/drobune/gyazo/GyazoChef/nodes/memcached.json" . 65)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/recipes/default.rb" . 928)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/api/images_controller.rb" . 3607)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-dev.json" . 586)
+ ("/home/drobune/gyazo/GyazoChef/data_bags/hosts/gce-asia.json" . 372)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/memcached/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/memcached/recipes"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/memcached/recipes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/memcached/recipes/gce.rb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/memcached/recipes/gce.rb" . 726)
+ ("/home/drobune/gyazo/GyazoChef/spec/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/spec/upload"))
+ ("/home/drobune/gyazo/GyazoChef/spec/upload/upload_spec.rb" . 231)
+ ("/home/drobune/gyazo/GyazoChef/spec/upload/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/spec/upload/.."))
+ ("/home/drobune/gyazo/GyazoChef/properties.yml" . 555)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/templates/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/templates/default"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/templates/default/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/templates/default/upload_nginx.conf.erb"))
+ ("/home/drobune/gyazo/GyazoChef/data_bags/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/data_bags/nodes"))
+ ("/home/drobune/gyazo/GyazoChef/data_bags/nodes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/data_bags/nodes/gyazo-upload-us-1.json"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/recipes/default.rb" . 1507)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-us-1.json" . 171)
+ ("/home/drobune/gyazo/GyazoChef/roles/gyazo_thumb.json" . 653)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/templates/default/upload_nginx.conf.erb" . 23)
+ ("/home/drobune/gyazo/GyazoRails/Rakefile" . 253)
+ ("/home/drobune/gyazo/GyazoRails/app/models/image_file.rb" . 5098)
+ ("/home/drobune/gyazo/GyazoRails/app/views/api/images/_image.json.jbuilder" . 22)
+ ("/home/drobune/gyazo/GyazoRails/config/routes.rb" . 11332)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/controllers/image_files_controller.rb"))
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/image_files_controller.rb" . 1304)
+ ("/home/drobune/gyazo/GyazoRails/app/helpers/images_helper.rb" . 696)
+ ("/home/drobune/Downloads/"
+  (dired-filename . "/home/drobune/Downloads/google"))
+ ("/home/drobune/Downloads/google" . 887)
+ ("/home/drobune/.emacs.d/elpa/undo-tree-20140509.522/undo-tree-autoloads.el" . 1650)
+ ("/home/drobune/gyazo/botcop/scripts/dropbunecop.coffee" . 354)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/deploy/recipes/default.rb" . 170)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/deploy/metadata.rb" . 277)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/board/HistoryHeader.js" . 214)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/lib/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/client/js/app/lib/preloadData.js"))
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/application_controller.rb" . 3758)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/header/GlobalHeader.js" . 1407)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/images_controller.rb" . 1861)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/lib/preloadData.js" . 273)
+ ("/home/drobune/gyazo/GyazoRails/app/views/images/show.html.slim" . 3051)
+ ("/home/drobune/gyazo/GyazoRails/app/views/layouts/_javascript.html.slim" . 88)
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/admin/searches_controller_spec.rb" . 1064)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/header/HeaderMenuButton.js" . 718)
+ ("/home/drobune/gyazo/"
+  (dired-filename . "/home/drobune/gyazo/gyazo_1.1.orig.tar.gz"))
+ ("/home/drobune/gyazo/gyazo_1.1.orig.tar.gz" . 199)
+ ("/home/drobune/gyazo/gyo/bin/videotogif" . 135)
+ ("/home/drobune/gyazo/GyazoRails/spec/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/spec/requests"))
+ ("/home/drobune/gyazo/GyazoRails/spec/requests/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/spec/requests/sessions_spec.rb"))
+ ("/home/drobune/gyazo/GyazoRails/spec/factories/user.rb" . 696)
+ ("/home/drobune/gyazo/GyazoRails/spec/requests/sessions_spec.rb" . 1156)
+ ("/home/drobune/gyazo/GyazoRails/package.json" . 3446)
+ ("/home/drobune/gyazo/GyazoRails/app/views/layouts/_mixpanel.html.erb" . 1419)
+ ("/home/drobune/gyazo/gyo/circle.yml" . 617)
+ ("/home/drobune/gyazo/GyazoRails/Gemfile" . 3240)
+ ("/home/drobune/gyazo/GyazoRails/app/helpers/elasticsearch_helper.rb" . 180)
+ ("/home/drobune/gyazo/GyazoRails/app/helpers/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/helpers/users_helper.rb"))
+ ("/home/drobune/gyazo/GyazoRails/scripts/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/scripts/same_ip_usage.rb"))
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/concerns/image_search_concern.rb" . 4848)
+ ("/home/drobune/gyazo/GyazoRails/scripts/same_ip_usage.rb" . 348)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/ImageRoot.js" . 1729)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/DrawCanvas.js" . 4364)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/Search.js" . 1240)
+ ("/home/drobune/gyazo/GyazoRails/config/environments/production.rb" . 2058)
+ ("/home/drobune/gyazo/GyazoRails/config/unicorn.yml" . 267)
+ ("/home/drobune/gyazo/GyazoChef/.gitignore" . 79)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/god/templates/default/god.erb" . 855)
+ ("/home/drobune/gyazo/GyazoRails/config.ru" . 155)
+ ("/home/drobune/gyazo/GyazoRails/lib/capistrano/tasks/unicorn.cap" . 458)
+ ("/home/drobune/gyazo/GyazoRails/config/unicorn.god" . 773)
+ ("/home/drobune/gyazo/GyazoRails/config/god.rb" . 115)
+ ("/home/drobune/gyazo/GyazoRails/app/models/image.rb" . 1942)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/nginx.conf.erb" . 2365)
+ ("/home/drobune/gyazo/escargot/config/"
+  (dired-filename . "/home/drobune/gyazo/escargot/config/database.yml"))
+ ("/home/drobune/gyazo/escargot/app/controllers/concerns/api_error_handler.rb" . 328)
+ ("/home/drobune/gyazo/escargot/"
+  (dired-filename . "/home/drobune/gyazo/escargot/Gemfile"))
+ ("/home/drobune/gyazo/escargot/Gemfile" . 590)
+ ("/home/drobune/gyazo/escargot/spec/"
+  (dired-filename . "/home/drobune/gyazo/escargot/spec/services"))
+ ("/home/drobune/gyazo/escargot/spec/services/"
+  (dired-filename . "/home/drobune/gyazo/escargot/spec/services/create_subscription_service_spec.rb"))
+ ("/home/drobune/gyazo/escargot/spec/factories/"
+  (dired-filename . "/home/drobune/gyazo/escargot/spec/factories/user.rb"))
+ ("/home/drobune/gyazo/escargot/spec/factories/user.rb" . 93)
+ ("/home/drobune/gyazo/escargot/config/database.yml" . 747)
+ ("/home/drobune/gyazo/escargot/spec/services/create_subscription_service_spec.rb" . 3096)
+ ("/home/drobune/gyazo/GyazoRails/lib/escargot.rb" . 39)
+ ("/home/drobune/gyazo/escargot/app/services/create_subscription_service.rb" . 733)
+ ("/home/drobune/gyazo/GyazoRails/app/models/user.rb" . 8046)
+ ("/home/drobune/garage/hiroshi/"
+  (dired-filename . "/home/drobune/garage/hiroshi/lib"))
+ ("/home/drobune/garage/hiroshi/lib/"
+  (dired-filename . "/home/drobune/garage/hiroshi/lib/mongoid"))
+ ("/home/drobune/garage/hiroshi/lib/mongoid/"
+  (dired-filename . "/home/drobune/garage/hiroshi/lib/mongoid/multitenancy"))
+ ("/home/drobune/garage/hiroshi/lib/mongoid/multitenancy/"
+  (dired-filename . "/home/drobune/garage/hiroshi/lib/mongoid/multitenancy/document.rb"))
+ ("/home/drobune/garage/hiroshi/lib/mongoid/multitenancy/document.rb" . 989)
+ ("/home/drobune/garage/hiroshi/spec/"
+  (dired-filename . "/home/drobune/garage/hiroshi/spec/mandatory_spec.rb"))
+ ("/home/drobune/gyazo/GyazoRails/Gemfile.lock" . 536)
+ ("/home/drobune/gyazo/GyazoRails/config/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/config/mongoid.yml"))
+ ("/home/drobune/gyazo/GyazoRails/config/mongoid.yml" . 1149)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/gyazo_upload.conf.erb" . 2984)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/admin/images_controller.rb" . 877)
+ ("/home/drobune/gyazo/GyazoRails/app/helpers/application_helper.rb" . 643)
+ ("/home/drobune/gyazo/botcop/"
+  (dired-filename . "/home/drobune/gyazo/botcop/scripts"))
+ ("/home/drobune/gyazo/botcop/scripts/"
+  (dired-filename . "/home/drobune/gyazo/botcop/scripts/dropbunecop.coffee"))
+ ("/home/drobune/gyazo/escargot/circle.yml" . 754)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/sessions_controller.rb" . 424)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/api/geo_controller.rb" . 655)
+ ("/home/drobune/gyazo/GyazoRails/app/views/layouts/_payment_script.html.erb" . 262)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/pro/SelectPlanModal.js" . 1090)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/stores/PaymentPlanStore.js" . 1284)
+ ("/home/drobune/gyazo/GyazoRails/config/settings.yml" . 1274)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/ninjas_controller.rb" . 764)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/gyazo.conf.erb" . 2496)
+ ("/home/drobune/gyazo/gyo/start_staging.sh" . 384)
+ ("/home/drobune/gyazo/gyo/main.go" . 4004)
+ ("/home/drobune/gyazo/gyo/gyazo_client.go" . 193)
+ ("/home/drobune/gyazo/gyo/main_test.go" . 12960)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/team/users_controller.rb" . 2455)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/models/Board.js" . 66)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/setupSentry.js" . 63)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/actions/ImageActions.js" . 293)
+ ("/home/drobune/Downloads/502.har" . 391173)
+ ("/home/drobune/Downloads/204.har" . 1451)
+ ("/home/drobune/gyazo/GyazoRails/.rubocop.yml" . 707)
+ ("/home/drobune/gyazo/GyazoRails/spec/factories/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/spec/factories/user.rb"))
+ ("/home/drobune/gyazo/GyazoRails/spec/mailers/contact_mailer_spec.rb" . 2169)
+ ("/home/drobune/gyazo/GyazoRails/spec/requests/images_spec.rb" . 5715)
+ ("/home/drobune/gyazo/gyo/start.sh" . 265)
+ ("/home/drobune/gyazo/GyazoRails/app/services/image_upload_service.rb" . 2594)
+ ("/home/drobune/gyazo/GyazoChef/Gemfile" . 87)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/settings/DevicesTable.js" . 710)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/api/application_controller.rb" . 335)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/actions/ImagesActions.js" . 768)
+ ("/home/drobune/gyazo/GyazoRails/bin/rotate_compiled_assets" . 260)
+ ("/home/drobune/gyazo/GyazoRails/lib/remove_cache.rb" . 705)
+ ("/home/drobune/gyazo/GyazoRails/lib/tasks/remove_cache.rake" . 1045)
+ ("/home/drobune/gyazo/GyazoRails/spec/requests/api/api_images_spec.rb" . 12894)
+ ("/home/drobune/gyazo/gyazo-chrome-extension/"
+  (dired-filename . "/home/drobune/gyazo/gyazo-chrome-extension/content.js"))
+ ("/home/drobune/gyazo/gyazo-chrome-extension/content.js" . 13961)
+ ("/home/drobune/gyazo/chrome-tx" . 139)
+ ("/home/drobune/gyazo/GyazoChef/roles/gyazo_gif_image_tools.json" . 3)
+ ("/home/drobune/gyazo/gyazo-chrome-extension/main.js" . 4575)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/gyazo.conf.erb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/recipes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/recipes/default.rb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyo/recipes/default.rb" . 674)
+ ("/home/drobune/gyazo/GyazoRails/circle.yml" . 59)
+ ("/home/drobune/gyazo/GyazoRails/app/views/api/docs/_image_en.html.slim" . 3108)
+ ("/home/drobune/gyazo/GyazoRails/config/initializers/filter_parameter_logging.rb" . 137)
+ ("/home/drobune/gyazo/GyazoUpload/config/"
+  (dired-filename . "/home/drobune/gyazo/GyazoUpload/config/deploy"))
+ ("/home/drobune/gyazo/GyazoUpload/config/deploy/"
+  (dired-filename . "/home/drobune/gyazo/GyazoUpload/config/deploy/production.rb"))
+ ("/home/drobune/gyazo/GyazoUpload/config/deploy/production.rb" . 45)
+ ("/home/drobune/gyazo/GyazoUpload/lib/image_file.php" . 8179)
+ ("/home/drobune/gyazo/GyazoRails/client/js/app/components/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/client/js/app/components/DrawContainer.coffee"))
+ ("/home/drobune/gyazo/GyazoUpload/controllers/printimage.php" . 13999)
+ ("/etc/hosts" . 600)
+ ("/home/drobune/garage/"
+  (dired-filename . "/home/drobune/garage/cookbook-elasticsearch"))
+ ("/home/drobune/garage/cookbook-elasticsearch/"
+  (dired-filename . "/home/drobune/garage/cookbook-elasticsearch/libraries"))
+ ("/home/drobune/garage/cookbook-elasticsearch/libraries/"
+  (dired-filename . "/home/drobune/garage/cookbook-elasticsearch/libraries/resource_configure.rb"))
+ ("/home/drobune/garage/cookbook-elasticsearch/libraries/resource_configure.rb" . 245)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/es.conf.erb" . 222)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/attributes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/attributes/default.rb"))
+ ("/home/drobune/gyazo/GyazoChef/Berksfile" . 589)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/attributes/default.rb" . 456)
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/spec/controllers/admin"))
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/admin/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/spec/controllers/admin/images_controller_spec.rb"))
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/admin/images_controller_spec.rb" . 364)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/concerns/locale_concern.rb" . 645)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/geo_gyazo.conf.erb" . 741)
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/admin/reports_controller_spec.rb" . 1819)
+ ("/home/drobune/gyazo/GyazoRails/spec/routing/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/spec/routing/admin"))
+ ("/home/drobune/gyazo/GyazoRails/spec/routing/admin/downgrades_routing_spec.rb" . 198)
+ ("/home/drobune/gyazo/GyazoRails/spec/routing/admin/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/spec/routing/admin/downgrades_routing_spec.rb"))
+ ("/home/drobune/gyazo/GyazoRails/app/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/controllers"))
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/admin/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/controllers/admin/images_controller.rb"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/searches/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/views/admin/searches/index.html.erb"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/searches/index.html.erb" . 1383)
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/menu/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/views/admin/menu/index.html.erb"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/views/admin/images"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/images/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/views/admin/images/random.html.erb"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/sessions/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/views/admin/sessions/_user.html.slim"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/sessions/_user.html.slim" . 308)
+ ("/home/drobune/gyazo/GyazoRails/app/views/admin/images/index.html.erb" . 287)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/api/comments_controller.rb" . 240)
+ ("/home/drobune/gyazo/GyazoRails/spec/lib/gyazo/uri_spec.rb" . 208)
+ ("/home/drobune/gyazo/GyazoRails/app/views/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/views/images"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/images/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/app/views/images/show.json.jbuilder"))
+ ("/home/drobune/gyazo/GyazoRails/app/views/images/show.json.jbuilder" . 89)
+ ("/home/drobune/gyazo/GyazoRails/app/views/images/_image.json.jbuilder" . 1286)
+ ("/home/drobune/gyazo/GyazoRails/lib/gcs.rb" . 1208)
+ ("/home/drobune/gyazo/GyazoRails/app/workers/gcs_delete_worker.rb" . 505)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/recipes/default.rb" . 740)
+ ("/home/drobune/gyazo/GyazoChef/roles/elasticsearch.json" . 242)
+ ("/home/drobune/gyazo/GyazoChef/roles/ivy-es.json" . 175)
+ ("/home/drobune/gyazo/gyo/bin/"
+  (dired-filename . "/home/drobune/gyazo/gyo/bin/autoscale_deploy"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/templates"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/templates/default/nginx_plugin.conf" . 103)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/recipes/nginx.rb" . 315)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/templates/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/templates/default"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/cloud-monitoring/templates/default/" . 585)
+ ("/home/drobune/gyazo/GyazoRails/scripts/es_reindex_image.rb" . 491)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/admin/users_controller.rb" . 1166)
+ ("/home/drobune/gyazo/GyazoRails/lib/tasks/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/lib/tasks/i18n.rake"))
+ ("/home/drobune/gyazo/GyazoRails/lib/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/lib/gyazo"))
+ ("/home/drobune/gyazo/GyazoRails/lib/gyazo/" . 308)
+ ("/home/drobune/gyazo/GyazoRails/app/workers/index_image_worker.rb" . 54)
+ ("/home/drobune/gyazo/GyazoRails/app/workers/index_user_image_worker.rb" . 28)
+ ("/home/drobune/gyazo/GyazoRails/app/models/external_comment.rb" . 1436)
+ ("/home/drobune/garage/miyamoto/"
+  (dired-filename . "/home/drobune/garage/miyamoto/main.gs"))
+ ("/home/drobune/garage/miyamoto/main.gs" . 18269)
+ ("/home/drobune/gyazo/GyazoRails/app/workers/image_delete_worker.rb" . 363)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/recipes/github.rb" . 261)
+ ("/home/drobune/gyazo/GyazoChef/Gemfile.lock" . 2764)
+ ("/home/drobune/garage/hatena-bookmark-googlechrome-extension/"
+  (dired-filename . "/home/drobune/garage/hatena-bookmark-googlechrome-extension/.gitmodules"))
+ ("/home/drobune/garage/hatena-bookmark-googlechrome-extension/src/main/lib/15-UserManager.js" . 6126)
+ ("/home/drobune/gyazo/GyazoBlackboxTest/"
+  (dired-filename . "/home/drobune/gyazo/GyazoBlackboxTest/.rspec"))
+ ("/home/drobune/gyazo/GyazoBlackboxTest/spec/"
+  (dired-filename . "/home/drobune/gyazo/GyazoBlackboxTest/spec/blackbox"))
+ ("/home/drobune/gyazo/GyazoBlackboxTest/spec/blackbox/"
+  (dired-filename . "/home/drobune/gyazo/GyazoBlackboxTest/spec/blackbox/gyazo_app_spec.rb"))
+ ("/home/drobune/gyazo/GyazoBlackboxTest/spec/blackbox/gyazo_app_spec.rb" . 304)
+ ("/home/drobune/gyazo/GyazoBlackboxTest/spec/blackbox_helpers.rb" . 527)
+ ("/home/drobune/gyazo/GyazoBlackboxTest/README.md" . 419)
+ ("/home/drobune/gyazo/GyazoRails/app/models/team.rb" . 1697)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/api/static_pages_controller.rb" . 79)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/static_pages_controller.rb" . 214)
+ ("/home/drobune/gyazo/GyazoChef/server.csr" . 1046)
+ ("/home/drobune/gyazo/GyazoRails/bin/kill_unused_unicorns" . 232)
+ ("/home/drobune/gyazo/GyazoRails/config/environments/staging.rb" . 240)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/concerns/team_concern.rb" . 600)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/api/oembed_controller.rb" . 522)
+ ("/home/drobune/gyazo/GyazoRails/spec/models/image_spec.rb" . 7900)
+ ("/home/drobune/gyazo/GyazoRails/app/views/users/_user.json.jbuilder" . 201)
+ ("/home/drobune/gyazo/GyazoRails/spec/support/escargot.rb" . 1796)
+ ("/home/drobune/gyazo/GyazoRails/config/deploy/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/config/deploy/production.rb"))
+ ("/home/drobune/gyazo/escargot/.gitignore" . 554)
+ ("/home/drobune/gyazo/GyazoChef/server.key" . 9)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/templates/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/templates/default"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/templates/default/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/templates/default/gyazo_file_server.conf.erb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/recipes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/recipes/gyazo_file_server.rb"))
+ ("/home/drobune/gyazo/escargot/app/views/"
+  (dired-filename . "/home/drobune/gyazo/escargot/app/views/users"))
+ ("/home/drobune/gyazo/escargot/app/views/users/"
+  (dired-filename . "/home/drobune/gyazo/escargot/app/views/users/show.html.erb"))
+ ("/home/drobune/gyazo/escargot/app/views/users/show.html.erb" . 4127)
+ ("/home/drobune/gyazo/escargot/app/models/"
+  (dired-filename . "/home/drobune/gyazo/escargot/app/models/log.rb"))
+ ("/home/drobune/gyazo/escargot/app/models/log.rb" . 477)
+ ("/home/drobune/gyazo/escargot/app/controllers/paypal_hook_controller.rb" . 1225)
+ ("/home/drobune/gyazo/gyo/image.go" . 1948)
+ ("/home/drobune/gyazo/GyazoRails/bin/autoscale_deploy" . 2309)
+ ("/home/drobune/gyazo/GyazoChef/bin/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/bin/development_cook"))
+ ("/home/drobune/gyazo/GyazoChef/roles/base_deb.json" . 550)
+ ("/home/drobune/gyazo/GyazoRails/lib/capistrano/tasks/github.cap" . 856)
+ ("/home/drobune/gyazo/GyazoRails/public/opensearch.xml" . 4023)
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/images_controller_spec.rb" . 40680)
+ ("/home/drobune/gyazo/GyazoRails/app/models/upload_info.rb" . 1013)
+ ("/home/drobune/gyazo/escargot/spec/spec_helper.rb" . 1620)
+ ("/home/drobune/gyazo/escargot/db/migrate/20150226045654_create_paypal_plans.rb" . 153)
+ ("/home/drobune/gyazo/escargot/lib/tasks/create_paypal_plans.rake" . 1501)
+ ("/home/drobune/gyazo/escargot/lib/tasks/paypal_plan.rb" . 290)
+ ("/home/drobune/gyazo/escargot/README.md" . 562)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/templates/default/gyazo_file_server.erb" . 526)
+ ("/home/drobune/gyazo/gyo/config/deploy/staging.rb" . 63)
+ ("/home/drobune/gyazo/gyo/Capfile" . 32)
+ ("/home/drobune/gyazo/gyo/Gemfile" . 142)
+ ("/home/drobune/gyazo/gyo/Dockerfile" . 615)
+ ("/home/drobune/gyazo/escargot/bin/rails" . 146)
+ ("/home/drobune/gyazo/escargot/bin/"
+  (dired-filename . "/home/drobune/gyazo/escargot/bin/bundle"))
+ ("/home/drobune/gyazo/GyazoRails/config/initializers/raven.rb" . 200)
+ ("/home/drobune/gyazo/escargot/config/initializers/sentry.rb" . 184)
+ ("/home/drobune/gyazo/escargot/app/controllers/concerns/webhook_concern.rb" . 418)
+ ("/home/drobune/gyazo/escargot/Rakefile" . 221)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/god/attributes/default.rb" . 140)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/god/attributes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/god/attributes/default.rb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/branch_subdomain.conf.erb" . 665)
+ ("/home/drobune/gyazo/GyazoChef/circle.yml" . 563)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/templates/default/api.conf.erb" . 1840)
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/static_pages_controller_spec.rb" . 3558)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/files"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/files/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/files/default"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/files/default/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/files/default/99-mongodb-nproc.conf"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/files/default/99-mongodb-nproc.conf" . 40)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/templates/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/templates/default"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/templates/default/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/templates/default/mongod.conf.erb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/templates/default/mongod.conf.erb" . 243)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/attributes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/attributes/default.rb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/recipes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/recipes/default.rb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/metadata.rb" . 603)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongo-setting/metadata.rb" . 291)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongo-setting/" . 506)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/nginx/files/" . 264)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/mongodb/recipes/default.rb" . 505)
+ ("/home/drobune/gyazo/GyazoRails/spec/controllers/ninjas_controller_spec.rb" . 1491)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-jp-1.json" . 65)
+ ("/home/drobune/gyazo/GyazoUpload/app.php" . 742)
+ ("/home/drobune/gyazo/GyazoUpload/config/deploy.rb" . 139)
+ ("/home/drobune/gyazo/GyazoChef/essetting" . 2)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/attributes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/attributes/default.rb"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/attributes/default.rb" . 252)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/templates/default/rails_logger.conf.erb" . 146)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/td-agent/templates/default/proxy_nginx.conf.erb" . 557)
+ ("/home/drobune/gyazo/GyazoChef/data_bags/nodes/gyazo-app-us-2.json" . 116)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/hosts/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/hosts/recipes"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/hosts/recipes/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/site-cookbooks/hosts/recipes/default.rb"))
+ ("/home/drobune/gyazo/GyazoChef/data_bags/hosts/"
+  (dired-filename . "/home/drobune/gyazo/GyazoChef/data_bags/hosts/gce-us.json"))
+ ("/home/drobune/gyazo/GyazoChef/data_bags/hosts/gce-us.json" . 20)
+ ("/home/drobune/gyazo/GyazoChef/spec/upload/nginx_spec.rb" . 291)
+ ("/home/drobune/gyazo/GyazoChef/spec/upload/hosts_spec.rb" . 127)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-us-10.json" . 60)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-nl-21.json" . 60)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-nl-22.json" . 7)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-nl-23.json" . 23)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-nl-24.json" . 23)
+ ("/home/drobune/gyazo/GyazoChef/nodes/gyazo-upload-nl-25.json" . 242)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/hosts/recipes/default.rb" . 339)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/hosts/metadata.rb" . 275)
+ ("/home/drobune/gyazo/GyazoChef/data_bags/nodes/gyazo-upload-us-11.json" . 138)
+ ("/home/drobune/gyazo/GyazoRails/config/sidekiq.yml" . 229)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/webhooks_controller.rb" . 1183)
+ ("/home/drobune/gyazo/GyazoRails/app/controllers/api/external_comments_controller.rb" . 362)
+ ("/home/drobune/gyazo/GyazoChef/Dockerfile" . 109)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gyazo/recipes/rm_tmp_dir_crontab.rb" . 345)
+ ("/home/drobune/gyazo/GyazoRails/bin/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/bin/autoscale_deploy"))
+ ("/home/drobune/gyazo/GyazoRails/config/sidekiq.god" . 864)
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/gsutil/recipes/default.rb" . 487)
+ ("/home/drobune/gyazo/GyazoRails/.gitignore" . 771)
+ ("/home/drobune/gyazo/GyazoRails/public/dist/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/public/dist/.."))
+ ("/home/drobune/gyazo/GyazoRails/public/images/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/public/images/."))
+ ("/home/drobune/gyazo/GyazoRails/public/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/public/stylesheets"))
+ ("/home/drobune/gyazo/GyazoRails/public/stylesheets/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/public/stylesheets/tablesorter.css"))
+ ("/home/drobune/gyazo/GyazoRails/public/stylesheets/tablesorter.css" . 592)
+ ("/home/drobune/gyazo/GyazoRails/client/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/client/js"))
+ ("/home/drobune/gyazo/GyazoRails/client/js/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/client/js/footer.js"))
+ ("/home/drobune/gyazo/GyazoRails/client/js/footer.js" . 138)
+ ("/home/drobune/gyazo/GyazoRails/bin/autoscale_rollback" . 484)
+ ("/home/drobune/gyazo/GyazoRails/config/environments/"
+  (dired-filename . "/home/drobune/gyazo/GyazoRails/config/environments/asdeploy-staging"))
+ ("/home/drobune/gyazo/GyazoChef/site-cookbooks/php/templates/default/php.ini.erb" . 52721)
+ ("/home/drobune/gyazo/GyazoRails/spec/spec_helper.rb" . 2527)
+ ("/home/drobune/gyazo/GyazoRails/bin/prepare_deploy" . 236)
+ ("/home/drobune/gyazo/GyazoRails/config/environments/asdeploy-staging" . 135)
+ ("/home/drobune/gyazo/GyazoRails/app/models/visit.rb" . 1658))
