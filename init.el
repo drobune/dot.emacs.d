@@ -239,18 +239,3 @@
 (setq js-indent-level 2)
 
 (global-undo-tree-mode t)
-
-(global-set-key "\C-h" 'delete-backward-char)
-(require 'drill-instructor)
-(setq drill-instructor-global t)
-
-(setq view-read-only t)
-;; view-minor-modeの設定
-(add-hook 'view-mode-hook
-          '(lambda()
-             (progn
-               (define-key view-mode-map "b" 'backward-char)
-               (define-key view-mode-map "f" 'forward-char)
-               (define-key view-mode-map "n" 'next-line)
-               (define-key view-mode-map "p" 'previous-line)
-               )))
