@@ -239,3 +239,5 @@
 (setq js-indent-level 2)
 
 (global-undo-tree-mode t)
+
+(global-set-key [(control h)] 'delete-backward-char)
