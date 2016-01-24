@@ -8,13 +8,13 @@
                                         ;(toggle-frame-fullscreen)
 
                                         ; フレーム透過設定
-(set-frame-parameter (selected-frame) 'alpha '(85 90))
+;;(set-frame-parameter (selected-frame) 'alpha '(85 90))
 
                                         ; utf-8
 (set-default-coding-systems 'utf-8)
 
                                         ; スクロールバー
-(when window-system (scroll-bar-mode -1))
+;;(when window-system (scroll-bar-mode -1))
 
                                         ; packages
 (require 'package)
@@ -241,3 +241,46 @@
 (global-undo-tree-mode t)
 
 (global-set-key [(control h)] 'delete-backward-char)
+
+require 'eww)
+;;; [2014-11-17 Mon]背景・文字色を無効化する
+(defvar eww-disable-colorize t)
+(defun shr-colorize-region--disable (orig start end fg &optional bg &rest _)
+  (unless eww-disable-colorize
+    (funcall orig start end fg)))
+(advice-add 'shr-colorize-region :around 'shr-colorize-region--disable)
+(advice-add 'eww-colorize-region :around 'shr-colorize-region--disable)
+(defun eww-disable-color ()
+  "ewwで文字色を反映させない"
+  (interactive)
+  (setq-local eww-disable-colorize t)
+  (eww-reload))
+(defun eww-enable-color ()
+  "ewwで文字色を反映させる"
+  (interactive)
+  (setq-local eww-disable-colorize nil)
+  (eww-reload))
+(setq eww-search-prefix "http://www.google.co.jp/search?q=")
+(defun eww-disable-images ()
+  "eww で画像表示させない"
+  (interactive)
+  (setq-local shr-put-image-function 'shr-put-image-alt)
+  (eww-reload))
+(defun eww-enable-images ()
+  "eww で画像表示させる"
+  (interactive)
+  (setq-local shr-put-image-function 'shr-put-image)
+  (eww-reload))
+(defun shr-put-image-alt (spec alt &optional flags)
+  (insert alt))
+;; はじめから非表示
+(defun eww-mode-hook--disable-image ()
+  (setq-local shr-put-image-function 'shr-put-image-alt))
+(add-hook 'eww-mode-hook 'eww-mode-hook--disable-image)
+
+(setq elfeed-feeds
+      '("http://feeds.feedburner.com/hn50points/"))
+(global-set-key (kbd "C-x w") 'elfeed)
+
+;; make emacs always use its own browser for opening URL links
+(setq browse-url-browser-function 'eww-browse-url)
