@@ -242,7 +242,7 @@
 
 (global-set-key [(control h)] 'delete-backward-char)
 
-require 'eww)
+(require 'eww)
 ;;; [2014-11-17 Mon]背景・文字色を無効化する
 (defvar eww-disable-colorize t)
 (defun shr-colorize-region--disable (orig start end fg &optional bg &rest _)
@@ -279,7 +279,7 @@ require 'eww)
 (add-hook 'eww-mode-hook 'eww-mode-hook--disable-image)
 
 (setq elfeed-feeds
-      '("http://feeds.feedburner.com/hn50points/"))
+      '("http://hnapp.com/rss?q=comments%3E50"))
 (global-set-key (kbd "C-x w") 'elfeed)
 
 ;; make emacs always use its own browser for opening URL links
