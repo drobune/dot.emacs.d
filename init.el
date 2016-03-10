@@ -58,7 +58,8 @@
 
                                         ; カーソルの点滅
 (blink-cursor-mode 1)
-(setq blink-cursor-interval 0.3)
+(set-cursor-color "#da70d6") ;;http://www.tayloredmktg.com/rgb/
+(setq blink-cursor-interval 0.19)
 (setq blink-cursor-delay 1.0)
 
                                         ; evalした結果を全部表示
@@ -74,7 +75,7 @@
 (require 'php-mode)
 
                                         ; 現在行を目立たせる
-(global-hl-line-mode)
+;;(global-hl-line-mode nil)
 
                                         ; カーソルの位置が何文字目かを表示する
 (column-number-mode t)
@@ -274,13 +275,20 @@
 (defun shr-put-image-alt (spec alt &optional flags)
   (insert alt))
 ;; はじめから非表示
-(defun eww-mode-hook--disable-image ()
-  (setq-local shr-put-image-function 'shr-put-image-alt))
-(add-hook 'eww-mode-hook 'eww-mode-hook--disable-image)
+;;(defun eww-mode-hook--disable-image ()
+;;  (setq-local shr-put-image-function 'shr-put-image-alt))
+;;(add-hook 'eww-mode-hook 'eww-mode-hook--disable-image)
 
 (setq elfeed-feeds
-      '("http://hnapp.com/rss?q=comments%3E50"))
+      '("http://hnapp.com/rss?q=comments%3E50"
+        "http://www.kernelplanet.org/rss10.xml"
+        "http://static.fsf.org/fsforg/rss/news.xml"))
 (global-set-key (kbd "C-x w") 'elfeed)
 
 ;; make emacs always use its own browser for opening URL links
 (setq browse-url-browser-function 'eww-browse-url)
+
+(when (require 'skk nil t)
+  (global-set-key (kbd "C-x j") 'skk-auto-fill-mode) ;;良い感じに改行を自動入力してくれる機能
+  (setq default-input-method "japanese-skk")         ;;emacs上での日本語入力にskkをつかう
+  (require 'skk-study))                              ;;変換学習機能の追加
