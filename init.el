@@ -1,5 +1,5 @@
                                         ; theme
-(load-theme 'wombat t)
+(load-theme 'adwaita t)
 
                                         ; font
                                         ;(set-frame-font "ricty-16.5")
@@ -130,12 +130,12 @@
 (global-whitespace-mode 1)
 
                                         ; 1行が80桁を超えたら長すぎると判断する。
-(setq whitespace-line-column 80)
+(setq whitespace-line-column 200)
 
                                         ; 視覚化の設定
 (setq whitespace-style '(face              ; faceを使って視覚化する。
                          trailing          ; 行末の空白を対象とする。
-                         lines-tail        ; 長すぎる行のうち
+                         ;lines-tail        ; 長すぎる行のうち
                          spaces
                          space-mark
                          newline
@@ -168,7 +168,7 @@
 
 (global-whitespace-mode 1)
 
-(defvar my/bg-color "#232323")
+(defvar my/bg-color "#EDEDED")
 (set-face-attribute 'whitespace-trailing nil
                     :background my/bg-color
                     :foreground "DeepPink"
@@ -300,3 +300,40 @@
              '("localhost" nil nil))
 (add-to-list 'tramp-default-proxies-alist
              '((regexp-quote (system-name)) nil nil))
+
+(require 'oniisama)
+
+
+(add-hook 'c++-mode-hook
+          '(lambda ()
+             (hs-minor-mode 1)))
+(add-hook 'c-mode-hook
+          '(lambda ()
+             (hs-minor-mode 1)))
+(add-hook 'scheme-mode-hook
+          '(lambda ()
+             (hs-minor-mode 1)))
+(add-hook 'emacs-lisp-mode-hook
+          '(lambda ()
+             (hs-minor-mode 1)))
+(add-hook 'lisp-mode-hook
+          '(lambda ()
+             (hs-minor-mode 1)))
+(add-hook 'python-mode-hook
+          '(lambda ()
+             (hs-minor-mode 1)))
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (hs-minor-mode 1)))
+(global-set-key (kbd "C-+") 'hs-toggle-hiding)
+
+(let ((ruby-mode-hs-info
+       '(ruby-mode
+          "class\\|module\\|def\\|if\\|unless\\|case\\|while\\|until\\|for\\|begin\\|do"
+          "end"
+          "#"
+          ruby-move-to-block
+          nil)))
+  (if (not (member ruby-mode-hs-info hs-special-modes-alist))
+      (setq hs-special-modes-alist
+            (cons ruby-mode-hs-info hs-special-modes-alist))))
