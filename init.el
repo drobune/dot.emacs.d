@@ -1,45 +1,55 @@
-                                        ; theme
 (load-theme 'adwaita t)
 
-                                        ; font
-                                        ;(set-frame-font "ricty-16.5")
-
-                                        ; full-screen
-                                        ;(toggle-frame-fullscreen)
-
-                                        ; フレーム透過設定
-;;(set-frame-parameter (selected-frame) 'alpha '(85 90))
-
-                                        ; utf-8
 (set-default-coding-systems 'utf-8)
 
-                                        ; スクロールバー
-;;(when window-system (scroll-bar-mode -1))
-
-                                        ; packages
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-                                        ; フリンジに行番号表示
-(global-linum-mode t)
+(global-linum-mode -1)
 (set-face-attribute 'linum nil :height 0.8)
 (setq linum-format "%4d")
 
-                                        ; helem
-(require 'helm-config)
+;(require 'helm-config)
+;(global-set-key (kbd "C-c g") 'helm-git-grep)
+;(global-set-key (kbd "M-X") 'helm-M-x)
+;(global-set-key (kbd "C-x f") 'helm-find-files)
+;(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
+;(global-set-key (kbd "C-c f") 'helm-occur)
+;(helm-mode 1)
+;(define-key helm-read-file-map (kbd "<tab>") 'helm-execute-persistent-action)
 
-                                        ; helm-git-grep
-(global-set-key (kbd "C-c g") 'helm-git-grep)
-(global-set-key (kbd "M-X") 'helm-M-x)
-(global-set-key (kbd "C-x f") 'helm-find-files)
-(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-(global-set-key (kbd "C-c f") 'helm-occur)
-(helm-mode 1)
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+;(global-set-key (kbd "M-x") 'counsel-M-x)
+;(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "<f1> l") 'counsel-find-library)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+;(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c f") 'swiper)
+(global-set-key (kbd "C-c g") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+(define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
 
-                                        ; TABで補完
-(define-key helm-read-file-map (kbd "<tab>") 'helm-execute-persistent-action)
+(setq ivy-display-style 'fancy)
+
+(require 'powerline)
+(powerline-default-theme)
+
+;(set-window-fringes nil 0 0)
+(fringe-mode 0)
+(set-face-attribute 'vertical-border nil :foreground (face-attribute 'fringe :background))
+
 
                                         ; バッファ末尾より後の行では、フリンジ左側に何か表示される
 (setq-default indicate-empty-lines t)
@@ -52,7 +62,6 @@
 
                                         ; メニューバーを消す
 (menu-bar-mode -1)
-
                                         ; ツールバーを消す
 (tool-bar-mode -1)
 
@@ -75,14 +84,13 @@
 (require 'php-mode)
 
                                         ; 現在行を目立たせる
-;;(global-hl-line-mode nil)
+(global-hl-line-mode -1)
 
                                         ; カーソルの位置が何文字目かを表示する
 (column-number-mode t)
 
                                         ; カーソルの位置が何行目かを表示する
 (line-number-mode t)
-
                                         ; カーソルの場所を保存する
 (require 'saveplace)
 (setq-default save-place t)
@@ -150,7 +158,7 @@
         (space-mark   ?\x920 [?\x924] [?_]) ; hard space - currency
         (space-mark   ?\xE20 [?\xE24] [?_]) ; hard space - currency
         (space-mark   ?\xF20 [?\xF24] [?_]) ; hard space - currency
-        (newline-mark ?\n    [?\u21B5 ?\n] [?\u240D ?\n])
+        ;(newline-mark ?\n    [?\u21B5 ?\n] [?\u240D ?\n])
         ))
 
                                         ;(set-face-foreground 'whitespace-space "cyan")
@@ -165,6 +173,8 @@
 
 ;; 保存前に自動でクリーンアップ
 (setq whitespace-action '(auto-cleanup))
+
+
 
 (global-whitespace-mode 1)
 
@@ -220,8 +230,8 @@
      repo_name (shell-command-to-string "git remote -v | grep origin | head -1 | awk '{sub(\"git@github.com:\",\"\");sub(\".git\",\"\");print $2}' | tr -d '\n'")
      github_url (concat "https://github.com/"
                         repo_name "/blob/" current_commit "/" prefix
-                        file_name "#L" (number-to-string current_line)))
-    (shell-command (concat "xdg-open " github_url))))
+                        file_name "#L" (number-to-string (+ current_line 1))))
+    (message github_url)))
 
 (global-set-key (kbd "M-b") 'jump-to-github)
 
@@ -301,7 +311,7 @@
 (add-to-list 'tramp-default-proxies-alist
              '((regexp-quote (system-name)) nil nil))
 
-(require 'oniisama)
+;(require 'oniisama)
 
 
 (add-hook 'c++-mode-hook
@@ -325,7 +335,7 @@
 (add-hook 'ruby-mode-hook
           '(lambda ()
              (hs-minor-mode 1)))
-(global-set-key (kbd "C-+") 'hs-toggle-hiding)
+(global-set-key (kbd "M-F") 'hs-toggle-hiding)
 
 (let ((ruby-mode-hs-info
        '(ruby-mode
@@ -343,3 +353,34 @@
  '(js2-bounce-indent-p t)
 )
 (setq js2-strict-missing-semi-warning nil)
+
+(defun window-half-height ()
+  (max 1 (/ (1- (window-height (selected-window))) 2)))
+
+(defun scroll-up-half ()
+  (interactive)
+  (scroll-up (window-half-height)))
+
+(defun scroll-down-half ()
+  (interactive)
+  (scroll-down (window-half-height)))
+
+(global-set-key (kbd "C-v")  'scroll-up-half)
+(global-set-key (kbd "M-v")  'scroll-down-half)
+
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode))
+
+(defun revert-all-buffers ()
+  "Refreshes all open buffers from their respective files."
+  (interactive)
+  (dolist (buf (buffer-list))
+    (with-current-buffer buf
+      (when (and (buffer-file-name) (file-exists-p (buffer-file-name)) (not (buffer-modified-p)))
+        (revert-buffer t t t) )))
+  (message "Refreshed open files.") )
+
+(setq linum-delay t)
+(defadvice linum-schedule (around my-linum-schedule () activate)
+  (run-with-idle-timer 0.2 nil #'linum-update-current))
+
+(scroll-bar-mode -1)
