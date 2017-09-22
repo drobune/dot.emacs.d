@@ -1,4 +1,4 @@
-(load-theme 'adwaita t)
+(load-theme 'leuven t)
 
 (set-default-coding-systems 'utf-8)
 
@@ -10,15 +10,6 @@
 (global-linum-mode -1)
 (set-face-attribute 'linum nil :height 0.8)
 (setq linum-format "%4d")
-
-;(require 'helm-config)
-;(global-set-key (kbd "C-c g") 'helm-git-grep)
-;(global-set-key (kbd "M-X") 'helm-M-x)
-;(global-set-key (kbd "C-x f") 'helm-find-files)
-;(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-;(global-set-key (kbd "C-c f") 'helm-occur)
-;(helm-mode 1)
-;(define-key helm-read-file-map (kbd "<tab>") 'helm-execute-persistent-action)
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
@@ -178,7 +169,7 @@
 
 (global-whitespace-mode 1)
 
-(defvar my/bg-color "#EDEDED")
+(defvar my/bg-color "#FFFFFF")
 (set-face-attribute 'whitespace-trailing nil
                     :background my/bg-color
                     :foreground "DeepPink"
@@ -304,12 +295,12 @@
   (require 'skk-study))                              ;;変換学習機能の追加
 
 ;; tramp settins for sudo remote host
-(add-to-list 'tramp-default-proxies-alist
-             '(nil "\\`root\\'" "/ssh:%h:"))
-(add-to-list 'tramp-default-proxies-alist
-             '("localhost" nil nil))
-(add-to-list 'tramp-default-proxies-alist
-             '((regexp-quote (system-name)) nil nil))
+;(add-to-list 'tramp-default-proxies-alist
+;             '(nil "\\`root\\'" "/ssh:%h:"))
+;(add-to-list 'tramp-default-proxies-alist
+;             '("localhost" nil nil))
+;(add-to-list 'tramp-default-proxies-alist
+;             '((regexp-quote (system-name)) nil nil))
 
 ;(require 'oniisama)
 
@@ -335,7 +326,7 @@
 (add-hook 'ruby-mode-hook
           '(lambda ()
              (hs-minor-mode 1)))
-(global-set-key (kbd "M-F") 'hs-toggle-hiding)
+(global-set-key (kbd "M-k") 'hs-toggle-hiding)
 
 (let ((ruby-mode-hs-info
        '(ruby-mode
@@ -384,3 +375,7 @@
   (run-with-idle-timer 0.2 nil #'linum-update-current))
 
 (scroll-bar-mode -1)
+
+
+(global-set-key (kbd "M-F") 'forward-word)
+(global-set-key (kbd "M-B") 'backward-word)
