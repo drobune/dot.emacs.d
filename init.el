@@ -238,7 +238,7 @@
 
 (setq ruby-deep-indent-paren-style nil)
 
-(setq js-indent-level 2)
+(setq js-indent-level 4)
 
 (global-undo-tree-mode t)
 
@@ -340,9 +340,19 @@
             (cons ruby-mode-hs-info hs-special-modes-alist))))
 
 (custom-set-variables
- '(js2-basic-offset 2)
- '(js2-bounce-indent-p t)
-)
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(custom-safe-themes
+   (quote
+    ("acb039d6f2c41b3bd852b448351b2979f44ef488026c95dd5228d2f6da57f574" default)))
+ '(js2-basic-offset 4)
+ '(js2-bounce-indent-p t))
 (setq js2-strict-missing-semi-warning nil)
 
 (defun window-half-height ()
@@ -379,3 +389,26 @@
 
 (global-set-key (kbd "M-F") 'forward-word)
 (global-set-key (kbd "M-B") 'backward-word)
+
+
+;; typescriptの補完や定義ジャンプ
+(require 'tide)
+(add-hook 'typescript-mode-hook
+          (lambda ()
+            (tide-setup)
+            (flycheck-mode t)
+            (setq flycheck-check-syntax-automatically '(save mode-enabled))
+            (eldoc-mode t)
+            (company-mode-on)))
+
+;; typescriptのインデント
+(setq typescript-indent-level 2)
+(setq tide-format-options '(:indentSize 2))
+(tide-current-indentsize)
+(put 'set-goal-column 'disabled nil)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
