@@ -1,5 +1,5 @@
 (load-theme 'leuven t)
-
+(set-frame-font "JetBrains Mono NL 11")
 (set-default-coding-systems 'utf-8)
 
 (require 'package)
@@ -7,9 +7,7 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(global-linum-mode -1)
-(set-face-attribute 'linum nil :height 0.8)
-(setq linum-format "%4d")
+(global-display-line-numbers-mode 1)
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
@@ -72,7 +70,7 @@
 (setq show-paren-style 'mixed)
 
                                         ; for php
-(require 'php-mode)
+;(require 'php-mode)
 
                                         ; 現在行を目立たせる
 (global-hl-line-mode -1)
@@ -349,10 +347,11 @@
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(custom-safe-themes
-   (quote
-    ("acb039d6f2c41b3bd852b448351b2979f44ef488026c95dd5228d2f6da57f574" default)))
+   '("acb039d6f2c41b3bd852b448351b2979f44ef488026c95dd5228d2f6da57f574" default))
  '(js2-basic-offset 4)
- '(js2-bounce-indent-p t))
+ '(js2-bounce-indent-p t)
+ '(package-selected-packages
+   '(haskell-mode phps-mode yaml-mode web-mode vue-mode undo-tree tide ruby-end ruby-block powerline popwin php-mode mozc magit leuven-theme json-mode js2-mode helm-ls-git helm-git-grep haml-mode go-mode elfeed drill-instructor-AZIK-force direx dired+ ddskk counsel coffee-mode auto-complete alchemist)))
 (setq js2-strict-missing-semi-warning nil)
 
 (defun window-half-height ()
