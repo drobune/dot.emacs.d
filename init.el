@@ -1,5 +1,5 @@
 (load-theme 'leuven t)
-(set-frame-font "JetBrains Mono NL 11")
+(set-frame-font "FiraCode Nerd Font 11")
 (set-default-coding-systems 'utf-8)
 
 (require 'package)
