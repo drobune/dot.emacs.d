@@ -1,2 +1,0 @@
-;; Generated package description from phps-mode.el  -*- no-byte-compile: t -*-
-(define-package "phps-mode" "0.4.49" "Major mode for PHP with code intelligence" '((emacs "26")) :commit "98fdd10d6299dfc5ad24cc214c9eaa0fdba946e4" :authors '(("Christian Johansson" . "christian@cvj.se")) :maintainer '("Christian Johansson" . "christian@cvj.se") :keywords '("tools" "convenience") :url "https://github.com/cjohansson/emacs-phps-mode")
