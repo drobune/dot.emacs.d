@@ -225,7 +225,7 @@
  '(custom-safe-themes
    '("acb039d6f2c41b3bd852b448351b2979f44ef488026c95dd5228d2f6da57f574" default))
  '(package-selected-packages
-   '(vertico auto-correct haskell-mode undo-tree powerline popwin mozc magit leuven-theme helm-ls-git helm-git-grep go-mode direx dired+ counsel)))
+   '(tree-sitter vertico auto-correct haskell-mode undo-tree powerline popwin mozc magit leuven-theme helm-ls-git helm-git-grep go-mode direx dired+ counsel)))
 
 (defun window-half-height ()
   (max 1 (/ (1- (window-height (selected-window))) 2)))
