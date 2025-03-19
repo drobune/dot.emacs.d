@@ -1,13 +1,12 @@
-
 (load-theme 'leuven t)
 (set-frame-font "FiraCode Nerd Font 11")
 (set-default-coding-systems 'utf-8)
 
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
-;; and `package-pinned-packages`. Most users will not need or want to do this.
-;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(setq package-archives
+      '(("melpa" . "https://melpa.org/packages/")
+        ("org" . "https://orgmode.org/elpa/")
+        ("gnu" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
 
 (vertico-mode 1)
@@ -15,7 +14,7 @@
 (global-display-line-numbers-mode 1)
 
 (setq enable-recursive-minibuffers t)
-
+(ivy-mode)
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c f") 'swiper)
 (global-set-key (kbd "C-c g") 'counsel-git-grep)
